@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'py -m pytest'
+                bat '"C:\\Python39\\python.exe" -m pytest'
             }
         }
         stage('Deploy') {
